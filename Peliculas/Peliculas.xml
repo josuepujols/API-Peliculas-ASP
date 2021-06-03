@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Peliculas</name>
+    </assembly>
+    <members>
+        <member name="M:Peliculas.Controllers.CategoriasController.GetCategorias">
+            <summary>
+            Obtener todas las categorias
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.CategoriasController.GetCategoria(System.Int32)">
+            <summary>
+            Obtener una categoria en especifico 
+            </summary>
+            <param name="id_categoria">Este es le id que se recibe para traer la categoria</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.CategoriasController.CrearCategoria(Peliculas.Models.DTOS.CategoriaDto)">
+            <summary>
+             Crear una nueva categoria 
+            </summary>
+            <param name="categoria_dto">JSON con todos los campos para crear una nueva categoria</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.CategoriasController.ActualizarCategoria(System.Int32,Peliculas.Models.DTOS.CategoriaDto)">
+            <summary>
+            Actualizar uan categoria en especifico 
+            </summary>
+            <param name="id_categoria">ID de la categoria a actualizar</param>
+            <param name="categoria_dto">Objeto con los nuevos datos a actualizar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.CategoriasController.BorrarCategoria(System.Int32)">
+            <summary>
+            Borrar una categoria existente 
+            </summary>
+            <param name="id_categoria">ID de la categoria a borrar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.PeliculasController.GetPeliculas">
+            <summary>
+            Obtener todas las peliculas 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.PeliculasController.GetPelicula(System.Int32)">
+            <summary>
+            Obtener una pelicula en especifico 
+            </summary>
+            <param name="id_pelicula">ID de la pelicula a buscar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.PeliculasController.GetPeliculasEnCategoria(System.Int32)">
+            <summary>
+            Buscar por categoria
+            </summary>
+            <param name="id_categoria">ID de la categoria para traer todas las peliculas de esta</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.PeliculasController.Buscar(System.String)">
+            <summary>
+            Buscar peliculas por nombre relacionado 
+            </summary>
+            <param name="nombre">Nombre o palabras claves para buscar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.PeliculasController.CrearPelicula(Peliculas.Models.DTOS.PeliculaCreateDto)">
+            <summary>
+            Agregar una nueva pelicula 
+            </summary>
+            <param name="pelicula_dto">Objeto con todos los campos a agregar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.PeliculasController.ActualizarPelicula(System.Int32,Peliculas.Models.DTOS.PeliculaUpdateDto)">
+            <summary>
+            Actualizar una pelicula en especifico 
+            </summary>
+            <param name="id_pelicula">ID de la pelicula a actualizar</param>
+            <param name="pelicula_dto">Objeto con los nuevos datos a actualizar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.PeliculasController.BorrarPelicula(System.Int32)">
+            <summary>
+            Borrar una pelicula 
+            </summary>
+            <param name="id_pelicula">ID de la pelicula a borrar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.UsuariosController.GetUsuarios">
+            <summary>
+            Obtener todos los usuarios 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.UsuariosController.GetUsuario(System.Int32)">
+            <summary>
+            Obtener un usuario por el ID
+            </summary>
+            <param name="id_usuario">ID del usuario a buscar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.UsuariosController.Registro(Peliculas.Models.DTOS.UsuarioAuthDto)">
+            <summary>
+            Registrar un nuevo usuario 
+            </summary>
+            <param name="usuarioAuthDto">Objeto con los campos del usuario a agregar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Peliculas.Controllers.UsuariosController.Login(Peliculas.Models.DTOS.UsuarioAuthLoginDto)">
+            <summary>
+            Hacer login y obtener un token 
+            </summary>
+            <param name="usuarioAuthLoginDto">Objeto con el usuario y la contraseña</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
